@@ -38,7 +38,7 @@ class LinkTest < ActiveSupport::TestCase
     refute(link.valid?, 'Expected the link to be invalid')
     refute(link.save, 'Expected saving an invalid link to fail')
 
-    expected = {url: ["is invalid"]}
+    expected = {url: ["is not a URL"]}
     actual = link.errors.messages
     assert_equal(expected, actual, 'Error messages did not match expectations')
   end
@@ -55,7 +55,7 @@ class LinkTest < ActiveSupport::TestCase
     refute(link.valid?, 'Expected the link to be invalid')
     refute(link.save, 'Expected saving an invalid link to fail')
 
-    expected = {client_ip: ["is invalid"]}
+    expected = {client_ip: ["is not an IP address"]}
     actual = link.errors.messages
     assert_equal(expected, actual, 'Error messages did not match expectations')
   end
@@ -79,7 +79,7 @@ class LinkTest < ActiveSupport::TestCase
     refute(link.valid?, 'Expected the link to be invalid')
     refute(link.save, 'Expected saving an invalid link to fail')
 
-    expected = {client_ip: ["is invalid"]}
+    expected = {client_ip: ["is not an IP address"]}
     actual = link.errors.messages
     assert_equal(expected, actual, 'Error messages did not match expectations')
   end

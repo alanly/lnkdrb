@@ -24,7 +24,7 @@ class LinksControllerTest < ActionController::TestCase
 
   test "#create returns an instance with the client's IP address" do
     link_params = {url: 'http://foo.bar'}
-    expected = @request.env['REMOTE_ADDR'] = '123.456.789.255'
+    expected = @request.env['REMOTE_ADDR'] = '255.254.253.252'
 
     Link.destroy_all
     assert(Link.count == 0)
