@@ -1,0 +1,34 @@
+<div class="row row--vertically-center">
+  <div class="small-8 small-centered columns">
+    <div class="header panel">
+      <div class="sign">
+        <h1><a href="/">Get Cr'lnkd</a></h1>
+      </div>
+      <% if flash[:error] %>
+
+      <% else %>
+      <% end %>
+
+      <% if @link %>
+      <p><span>Aww yeah!</span> Look at this shit,</p>
+      <br>
+      <code><%= shortened_link_url(@link) %></code>
+      <% else %>
+      <p><span>Link's too long?</span> Enshorten that shit.</p>
+      <p>Like, right now.</p>
+      <% end %>
+      <div class="form-bar">
+        <%= form_tag("/", method: "post") do %>
+          <div class="row collapse">
+            <div class="small-10 medium-11 columns">
+              <%= url_field_tag(:url, @link.try(:url), placeholder: "long ass link here") %>
+            </div>
+            <div class="small-2 medium-1 columns">
+              <button type="submit" class="button secondary postfix">&#128279;</button>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

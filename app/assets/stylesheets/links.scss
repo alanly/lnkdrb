@@ -1,0 +1,77 @@
+body {
+  background:#333;
+}
+
+.row--vertically-center {
+  transform: translateY(75%);
+}
+
+.header.panel {
+  margin: 3rem auto;
+  border: 2px solid #444;
+  background: #fff;
+  text-align: center;
+
+  p {
+    font: 1rem "Avenir Next";
+    padding: 1rem 2rem;
+    margin-top: -1.25rem;
+    margin-bottom: -1.25rem;
+
+    span {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 75%;
+      font-weight: bold;
+    }
+  }
+
+  code {
+    border: 1px solid #ececec;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .sign {
+    background:#fff;
+    width: 150px;
+    height: 2.4rem;
+    border: 2px solid #444;
+    position: relative;
+    top: -2.5rem;
+    margin: auto;
+
+    h1 {
+      text-transform: uppercase;
+      font: bolder 0.875rem "Avenir Next";
+      letter-spacing: 3px;
+      color: #666;
+      font-size: 70%;
+      text-align: center;
+      line-height: 2rem;
+    }
+  }
+
+  .form-bar {
+    background:#fff;
+    max-width: 480px;
+    height: 2.4rem;
+    border: 2px solid #444;
+    position: relative;
+    bottom: -2.5rem;
+    margin: auto;
+
+    input[type='url'] {
+      border: 0;
+      text-align: center;
+    }
+
+    .button.postfix {
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+one:
+  slug: fubar
+  url: http://www.foo.bar/baz/
+  hits: 123
+  client_ip: 127.0.0.1
