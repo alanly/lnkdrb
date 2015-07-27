@@ -1,3 +1,5 @@
+$font-stack: "Avenir Next", "Helvetica Neue", Roboto, Arial, sans-serif;
+
 body {
   background:#333;
 }
@@ -13,7 +15,7 @@ body {
   text-align: center;
 
   p {
-    font: 1rem "Avenir Next";
+    font: 1rem $font-stack;
     padding: 1rem 2rem;
     margin-top: -1.25rem;
     margin-bottom: -1.25rem;
@@ -43,7 +45,7 @@ body {
 
     h1 {
       text-transform: uppercase;
-      font: bolder 0.875rem "Avenir Next";
+      font: bolder 0.875rem $font-stack;
       letter-spacing: 3px;
       color: #666;
       font-size: 70%;
